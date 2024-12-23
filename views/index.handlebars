@@ -1,0 +1,36 @@
+
+<div class="container py-4">
+
+    <div class="p-5 mb-4 text-bg-dark rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Bem vindo</h1>
+        <p class="col-md-8 fs-4">Aplicação simples, desenvolvido em Node.js + Express.js + MongoDB.</p>
+          <a href="/usuarios/registro"><button class="btn btn-primary btn-lg" type="button">Crie uma conta</button></a>
+      </div>
+    </div>
+
+    <hr>
+
+    <h2>Postagens recentes</h2>
+    {{#each postagens}}
+    <div class="row align-items-md-stretch">
+      <div class="col-md-12 mt-3">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          <h2>{{titulo}}</h2>
+          <p>{{descricao}}</p>
+          <a href="/postagem/{{slug}}"><button class="btn btn-outline-light" type="button">Leia Mais</button> </a>
+          <hr>
+          <small>Categoria: {{categoria.nome}}</small><br>
+            <small>Data de publicação: {{data}}</small>
+        </div>
+      </div>
+      
+      </div>
+      {{else}}
+      <h5>Nenhuma postagem</h5>
+      {{/each}}
+
+</div>
+    
+
+    

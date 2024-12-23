@@ -1,0 +1,18 @@
+{
+    "Categoria": {
+      "type": "object",
+      "properties": {
+        "nome": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+  
